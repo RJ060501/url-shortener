@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     body = json.loads(event['body'])
     original_url = body['url']
     short_code = generate_short_code()
-    short_url = f"https://example.com/{short_code}"  # Placeholder URL
+    short_url = f"https://kcxdntjgu5.execute-api.us-west-2.amazonaws.com/prodhttps://kcxdntjgu5.execute-api.us-west-2.amazonaws.com/prod/{short_code}"  # Placeholder URL
     return {
         'statusCode': 200,
         'body': json.dumps({'shortUrl': short_url}),
